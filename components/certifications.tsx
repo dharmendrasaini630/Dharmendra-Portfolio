@@ -161,10 +161,10 @@ export function Certifications() {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto px-4">
           <div className="grid gap-8">
             {certifications.map((cert, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+              <Card key={index} className="hover:shadow-lg transition-shadow duration-300 w-full">
                 <CardContent className="p-8">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6 gap-4 md:gap-0">
                     <div className="flex items-start space-x-2 sm:space-x-4 mb-4 md:mb-0 w-full md:w-auto">
