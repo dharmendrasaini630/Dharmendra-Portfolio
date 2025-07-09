@@ -165,31 +165,30 @@ export function Certifications() {
           <div className="grid gap-8">
             {certifications.map((cert, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
-                    <div className="flex items-start space-x-4 mb-4 md:mb-0">
-                      <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <Award className="h-8 w-8 text-teal-600" />
+                <CardContent className="p-4 sm:p-6 md:p-8">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6 gap-4 md:gap-0">
+                    <div className="flex items-start space-x-3 sm:space-x-4 mb-4 md:mb-0 w-full md:w-auto">
+                      <div className="w-12 h-12 sm:w-16 sm:h-16 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Award className="h-6 w-6 sm:h-8 sm:w-8 text-teal-600" />
                       </div>
-                      <div>
-                        <h3 className="text-2xl font-bold text-slate-800 mb-1">{cert.title}</h3>
-                        <p className="text-slate-600 mb-2">
+                      <div className="min-w-0">
+                        <h3 className="text-lg sm:text-2xl font-bold text-slate-800 mb-1 break-words">{cert.title}</h3>
+                        <p className="text-slate-600 mb-2 text-sm sm:text-base">
                           <span className="font-semibold">Issued by:</span> {cert.issuer} • {cert.date}
                         </p>
-                        <Badge variant="secondary" className="bg-green-100 text-green-700">
+                        <Badge variant="secondary" className="bg-green-100 text-green-700 text-xs sm:text-sm px-2 py-1">
                           {cert.status}
                         </Badge>
                       </div>
                     </div>
-
-                    <div className="flex flex-col sm:flex-row gap-3">
+                    <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 w-full md:w-auto">
                       {/* Only show View Certificate for non-PSM certifications */}
                       {cert.certificateUrl && cert.type !== "psm" && (
                         <Button
                           variant="outline"
                           size="sm"
                           onClick={() => window.open(cert.certificateUrl, "_blank")}
-                          className="flex items-center"
+                          className="flex items-center w-full sm:w-auto justify-center"
                         >
                           <ExternalLink className="mr-2 h-4 w-4" />
                           View Certificate
@@ -198,18 +197,16 @@ export function Certifications() {
                       <Button
                         size="sm"
                         onClick={() => handleDownload(cert.type)}
-                        className="bg-teal-600 hover:bg-teal-700 flex items-center"
+                        className="bg-teal-600 hover:bg-teal-700 flex items-center w-full sm:w-auto justify-center"
                       >
                         <Download className="mr-2 h-4 w-4" />
                         Download PDF
                       </Button>
                     </div>
                   </div>
-
-                  <p className="text-slate-600 mb-6 leading-relaxed">{cert.description}</p>
-
+                  <p className="text-slate-600 mb-6 leading-relaxed text-sm sm:text-base break-words">{cert.description}</p>
                   <div className="mb-4">
-                    <p className="text-sm text-slate-500">
+                    <p className="text-xs sm:text-sm text-slate-500 break-words">
                       <span className="font-semibold">Certificate ID:</span> {cert.certificateId}
                       {cert.certificateUrl && (
                         <>
@@ -226,12 +223,11 @@ export function Certifications() {
                       )}
                     </p>
                   </div>
-
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3">Validated Skills:</h4>
-                    <div className="flex flex-wrap gap-2">
+                    <h4 className="font-semibold text-slate-800 mb-3 text-sm sm:text-base">Validated Skills:</h4>
+                    <div className="flex flex-wrap gap-1 sm:gap-2">
                       {cert.skills.map((skill, idx) => (
-                        <Badge key={idx} variant="outline" className="bg-teal-50 text-teal-700 border-teal-200">
+                        <Badge key={idx} variant="outline" className="bg-teal-50 text-teal-700 border-teal-200 text-xs sm:text-sm px-2 py-1">
                           {skill}
                         </Badge>
                       ))}

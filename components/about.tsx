@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Download, GraduationCap, Heart, User } from "lucide-react"
+import { Download, GraduationCap, Heart, User, Eye } from "lucide-react"
 
 export function About() {
   const handleViewResume = () => {
@@ -62,7 +62,7 @@ export function About() {
 
             <div className="pt-6 flex gap-4">
               <Button onClick={handleViewResume} className="bg-teal-600 hover:bg-teal-700">
-                <Download className="mr-2 h-5 w-5" />
+                <Eye className="mr-2 h-6 w-6 text-white group-hover:text-teal-200 transition-colors duration-200" />
                 View Resume
               </Button>
               <a href="/resume/Resume_Dharmendra_Kumar_Saini_Business_Analyst.pdf" download className="inline-block">
