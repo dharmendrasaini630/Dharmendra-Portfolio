@@ -161,19 +161,19 @@ export function Certifications() {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto">
           <div className="grid gap-8">
             {certifications.map((cert, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-4 sm:p-6 md:p-8">
+                <CardContent className="p-2 sm:p-4 md:p-6 lg:p-8">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6 gap-4 md:gap-0">
-                    <div className="flex items-start space-x-3 sm:space-x-4 mb-4 md:mb-0 w-full md:w-auto">
-                      <div className="w-12 h-12 sm:w-16 sm:h-16 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <Award className="h-6 w-6 sm:h-8 sm:w-8 text-teal-600" />
+                    <div className="flex items-start space-x-2 sm:space-x-4 mb-4 md:mb-0 w-full md:w-auto">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Award className="h-5 w-5 sm:h-6 sm:w-6 text-teal-600" />
                       </div>
                       <div className="min-w-0">
-                        <h3 className="text-lg sm:text-2xl font-bold text-slate-800 mb-1 break-words">{cert.title}</h3>
-                        <p className="text-slate-600 mb-2 text-sm sm:text-base">
+                        <h3 className="text-base sm:text-lg md:text-2xl font-bold text-slate-800 mb-1 break-words">{cert.title}</h3>
+                        <p className="text-slate-600 mb-2 text-xs sm:text-sm md:text-base">
                           <span className="font-semibold">Issued by:</span> {cert.issuer} • {cert.date}
                         </p>
                         <Badge variant="secondary" className="bg-green-100 text-green-700 text-xs sm:text-sm px-2 py-1">
@@ -181,7 +181,7 @@ export function Certifications() {
                         </Badge>
                       </div>
                     </div>
-                    <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 w-full md:w-auto">
+                    <div className="flex flex-col gap-2 sm:flex-row sm:gap-3 w-full md:w-auto">
                       {/* Only show View Certificate for non-PSM certifications */}
                       {cert.certificateUrl && cert.type !== "psm" && (
                         <Button
@@ -204,9 +204,9 @@ export function Certifications() {
                       </Button>
                     </div>
                   </div>
-                  <p className="text-slate-600 mb-6 leading-relaxed text-sm sm:text-base break-words">{cert.description}</p>
+                  <p className="text-slate-600 mb-6 leading-relaxed text-xs sm:text-sm md:text-base break-words">{cert.description}</p>
                   <div className="mb-4">
-                    <p className="text-xs sm:text-sm text-slate-500 break-words">
+                    <p className="text-xs sm:text-sm text-slate-500 break-words overflow-x-auto">
                       <span className="font-semibold">Certificate ID:</span> {cert.certificateId}
                       {cert.certificateUrl && (
                         <>
@@ -224,7 +224,7 @@ export function Certifications() {
                     </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-800 mb-3 text-sm sm:text-base">Validated Skills:</h4>
+                    <h4 className="font-semibold text-slate-800 mb-3 text-xs sm:text-sm md:text-base">Validated Skills:</h4>
                     <div className="flex flex-wrap gap-1 sm:gap-2">
                       {cert.skills.map((skill, idx) => (
                         <Badge key={idx} variant="outline" className="bg-teal-50 text-teal-700 border-teal-200 text-xs sm:text-sm px-2 py-1">
@@ -239,9 +239,9 @@ export function Certifications() {
           </div>
 
           <div className="text-center mt-12">
-            <div className="inline-flex items-center space-x-2 bg-white rounded-full px-6 py-3 shadow-sm">
-              <Award className="h-5 w-5 text-teal-600" />
-              <span className="text-slate-700 font-medium">Committed to continuous professional development</span>
+            <div className="inline-flex items-center space-x-2 bg-white rounded-full px-4 py-2 sm:px-6 sm:py-3 shadow-sm">
+              <Award className="h-4 w-4 sm:h-5 sm:w-5 text-teal-600" />
+              <span className="text-slate-700 font-medium text-xs sm:text-base">Committed to continuous professional development</span>
             </div>
           </div>
         </div>
