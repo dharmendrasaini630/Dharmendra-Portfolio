@@ -206,11 +206,26 @@ export function Certifications() {
                   </div>
                   <p className="text-slate-600 mb-6 leading-relaxed text-xs sm:text-sm md:text-base break-words">{cert.description}</p>
                   <div className="mb-4">
-                    <p className="text-xs sm:text-sm text-slate-500 break-words overflow-x-auto">
-                      <span className="font-semibold">Certificate ID:</span> {cert.certificateId}
-                      {cert.certificateUrl && (
-                        <>
-                          {" • "}
+                    {cert.type !== "powerbi" ? (
+                      <p className="text-xs sm:text-sm text-slate-500 break-words overflow-x-auto">
+                        <span className="font-semibold">Certificate ID:</span> {cert.certificateId}
+                        {cert.certificateUrl && (
+                          <>
+                            {" • "}
+                            <a
+                              href={cert.certificateUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-teal-600 hover:text-teal-700"
+                            >
+                              Verify Online
+                            </a>
+                          </>
+                        )}
+                      </p>
+                    ) : (
+                      cert.certificateUrl && (
+                        <p className="text-xs sm:text-sm text-slate-500 break-words overflow-x-auto">
                           <a
                             href={cert.certificateUrl}
                             target="_blank"
@@ -219,9 +234,9 @@ export function Certifications() {
                           >
                             Verify Online
                           </a>
-                        </>
-                      )}
-                    </p>
+                        </p>
+                      )
+                    )}
                   </div>
                   <div>
                     <h4 className="font-semibold text-slate-800 mb-3 text-xs sm:text-sm md:text-base">Validated Skills:</h4>
