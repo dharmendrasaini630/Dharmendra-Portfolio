@@ -14,7 +14,7 @@ export function Skills() {
       title: "Business Analysis",
       icon: <Target className="h-6 w-6" />,
       color: "bg-blue-100 text-blue-600",
-      skills: ["BRD Creation", "FRD Documentation", "Workflow Design", "Process Mapping", "Requirements Gathering"],
+      skills: ["BRD Creation", "FRD Documentation", "Workflow Design", "Process Mapping", "Requirements Gathering", "Requirement Elicitation"],
     },
     {
       title: "Data & Analytics",

@@ -39,7 +39,7 @@ export function Certifications() {
     },
     {
       title: "Certification of Capability in Business Analysis",
-      issuer: "Business Analysis Institute",
+      issuer: "Simplilearn",
       date: "August 2025",
       description:
         "Certification demonstrating capability in business analysis, including requirements gathering, stakeholder management, and process improvement.",
@@ -49,6 +49,7 @@ export function Certifications() {
       skills: [
         "Business Analysis",
         "Requirements Gathering",
+        "Requirement Elicitation",
         "Stakeholder Management",
         "Process Improvement",
         "Documentation"
