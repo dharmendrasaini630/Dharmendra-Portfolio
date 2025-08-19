@@ -37,6 +37,24 @@ export function Certifications() {
       ],
       type: "powerbi",
     },
+    {
+      title: "Certification of Capability in Business Analysis",
+      issuer: "Business Analysis Institute",
+      date: "August 2025",
+      description:
+        "Certification demonstrating capability in business analysis, including requirements gathering, stakeholder management, and process improvement.",
+      certificateUrl: "/resume/Certification of Capability in Business Analysis .pdf",
+      certificateId: "BA-2025-001",
+      status: "Verified",
+      skills: [
+        "Business Analysis",
+        "Requirements Gathering",
+        "Stakeholder Management",
+        "Process Improvement",
+        "Documentation"
+      ],
+      type: "businessanalysis",
+    },
   ]
 
   const handleDownloadPSM = () => {
@@ -145,6 +163,14 @@ export function Certifications() {
       const link = document.createElement("a");
       link.href = "/resume/power-bi-certificate.jpg";
       link.download = "PowerBI-Certificate-Dharmendra-Kumar-Saini.jpg";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else if (type === "businessanalysis") {
+      // Download the Business Analysis certificate PDF
+      const link = document.createElement("a");
+      link.href = "/resume/Certification of Capability in Business Analysis .pdf";
+      link.download = "Certification-of-Capability-in-Business-Analysis.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
