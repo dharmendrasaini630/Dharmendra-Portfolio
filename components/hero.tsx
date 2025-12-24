@@ -37,7 +37,7 @@ export function Hero() {
               </p>
 
               <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">
-                With over 3+ years of experience in API integrations, business process optimization, and data analysis.
+                With over 4+ years of experience in API integrations, business process optimization, and data analysis.
                 I specialize in transforming complex requirements into smart technical solutions—especially in hiring
                 and payroll systems.
               </p>

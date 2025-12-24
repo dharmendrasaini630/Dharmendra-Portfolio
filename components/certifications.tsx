@@ -8,13 +8,31 @@ import { Award, ExternalLink, Download } from "lucide-react"
 export function Certifications() {
   const certifications = [
     {
+      title: "Certified Business Analysis Professional (CBAP)",
+      issuer: "Simplilearn",
+      date: "2025",
+      description:
+        "Professional certification for business analysis practitioners with extensive experience. Validates recognition of professional competence, advanced knowledge and expertise in business analysis.",
+      certificateUrl: "/resume/Certified Business Analysis Professional CBAP (1).pdf",
+      certificateId: "CBAP-2025",
+      status: "Verified",
+      skills: [
+        "Business Analysis Planning",
+        "Requirements Life Cycle Management",
+        "Strategy Analysis",
+        "Requirements Analysis",
+        "Solution Evaluation"
+      ],
+      type: "cbap",
+    },
+    {
       title: "Professional Scrum Master™ I (PSM I)",
       issuer: "Scrum.org",
       date: "January 22, 2025",
       description:
         "Globally recognized certification demonstrating fundamental level of Scrum mastery, including concepts of applying Scrum and proven understanding of Scrum as described in the Scrum Guide.",
       credlyLink: "https://www.credly.com/badges/3f3760a5-d10a-409b-bb8b-781e18ab61cf/linked_in_profile",
-      certificateUrl: "https://scrum.org/certificates/1182218",
+      certificateUrl: "/resume/PSM-I-Certificate-Dharmendra-Kumar-Saini_page-0001 (3).pdf",
       certificateId: "1182218",
       status: "Verified",
       skills: ["Scrum Framework", "Agile Methodology", "Team Leadership", "Sprint Planning", "Scrum Events"],
@@ -26,6 +44,7 @@ export function Certifications() {
       date: "May 18, 2025",
       description:
         "Comprehensive course covering advanced Power BI techniques for data analysis, dashboard creation, and business intelligence solutions. Completed 7 hours 14 minutes of intensive training.",
+      certificateUrl: "/resume/Complete Guide to Power BI for Data Analysts (1).pdf",
       certificateId: "19c1265cd6d81f57e3e0e08e30fb697fbe3c5cf7a4f5bf396f06d506df29f04c",
       status: "Completed",
       skills: [
@@ -43,7 +62,7 @@ export function Certifications() {
       date: "August 2025",
       description:
         "Certification demonstrating capability in business analysis, including requirements gathering, stakeholder management, and process improvement.",
-      certificateUrl: "/resume/Certification of Capability in Business Analysis .pdf",
+      certificateUrl: "/resume/Certification of Capability in Business Analysis (1).pdf",
       certificateId: "BA-2025-001",
       status: "Verified",
       skills: [
@@ -152,26 +171,34 @@ export function Certifications() {
 
   const handleDownload = (type: string) => {
     if (type === "psm") {
-      // Download the PSM I certificate image
+      // Download the PSM I certificate
       const link = document.createElement("a");
-      link.href = "/resume/psm-certificate.jpg";
-      link.download = "PSM-I-Certificate-Dharmendra-Kumar-Saini.jpg";
+      link.href = "/resume/PSM-I-Certificate-Dharmendra-Kumar-Saini_page-0001 (3).pdf";
+      link.download = "PSM-I-Certificate-Dharmendra-Kumar-Saini.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
     } else if (type === "powerbi") {
-      // Download the Power BI certificate image
+      // Download the Power BI certificate
       const link = document.createElement("a");
-      link.href = "/resume/power-bi-certificate.jpg";
-      link.download = "PowerBI-Certificate-Dharmendra-Kumar-Saini.jpg";
+      link.href = "/resume/Complete Guide to Power BI for Data Analysts (1).pdf";
+      link.download = "PowerBI-Certificate-Dharmendra-Kumar-Saini.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
     } else if (type === "businessanalysis") {
       // Download the Business Analysis certificate PDF
       const link = document.createElement("a");
-      link.href = "/resume/Certification of Capability in Business Analysis .pdf";
+      link.href = "/resume/Certification of Capability in Business Analysis (1).pdf";
       link.download = "Certification-of-Capability-in-Business-Analysis.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else if (type === "cbap") {
+      // Download the CBAP certificate PDF
+      const link = document.createElement("a");
+      link.href = "/resume/Certified Business Analysis Professional CBAP (1).pdf";
+      link.download = "Certified-Business-Analysis-Professional-CBAP.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -210,7 +237,7 @@ export function Certifications() {
                     </div>
                     <div className="flex flex-col gap-2 sm:flex-row sm:gap-3 w-full md:w-auto">
                       {/* Only show View Certificate for non-PSM certifications */}
-                      {cert.certificateUrl && cert.type !== "psm" && (
+                      {cert.certificateUrl && (
                         <Button
                           variant="outline"
                           size="sm"
@@ -232,39 +259,7 @@ export function Certifications() {
                     </div>
                   </div>
                   <p className="text-slate-600 mb-6 leading-relaxed text-xs sm:text-sm md:text-base break-words">{cert.description}</p>
-                  <div className="mb-4">
-                    {cert.type !== "powerbi" ? (
-                      <p className="text-xs sm:text-sm text-slate-500 break-words overflow-x-auto">
-                        <span className="font-semibold">Certificate ID:</span> {cert.certificateId}
-                        {cert.certificateUrl && (
-                          <>
-                            {" • "}
-                            <a
-                              href={cert.certificateUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-teal-600 hover:text-teal-700"
-                            >
-                              Verify Online
-                            </a>
-                          </>
-                        )}
-                      </p>
-                    ) : (
-                      cert.certificateUrl && (
-                        <p className="text-xs sm:text-sm text-slate-500 break-words overflow-x-auto">
-                          <a
-                            href={cert.certificateUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-teal-600 hover:text-teal-700"
-                          >
-                            Verify Online
-                          </a>
-                        </p>
-                      )
-                    )}
-                  </div>
+
                   <div>
                     <h4 className="font-semibold text-slate-800 mb-3 text-xs sm:text-sm md:text-base">Validated Skills:</h4>
                     <div className="flex flex-wrap gap-1 sm:gap-2">
