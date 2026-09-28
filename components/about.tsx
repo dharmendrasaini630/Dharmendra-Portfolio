@@ -28,9 +28,10 @@ export function About() {
               <div>
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">Professional Journey</h3>
                 <p className="text-slate-600 leading-relaxed">
-                  As a Business Analyst with over 3 years of experience, I specialize in API integrations, business
-                  process optimization, and data analysis. My expertise lies in transforming complex business
-                  requirements into smart technical solutions, particularly in hiring and payroll systems.
+                  Strategic & delivery-focused Business Analyst and Project Manager with 4+ years of experience in the
+                  IT/software domain. Currently leading a government digital transformation program for SITA, South Africa.
+                  Well-rounded across both product-based and service-based environments with hands-on strength in
+                  As-Is/To-Be analysis, BRD/FRD, user stories, prototyping, and end-to-end project governance.
                 </p>
               </div>
             </div>
@@ -79,11 +80,13 @@ export function About() {
               <CardContent className="p-6">
                 <h4 className="font-semibold text-slate-800 mb-2">Core Expertise</h4>
                 <ul className="space-y-2 text-slate-600">
-                  <li>• API Integration & System Connectivity</li>
-                  <li>• Business Process Analysis & Optimization</li>
-                  <li>• Data Analysis & Visualization</li>
-                  <li>• Requirements Documentation (BRD/FRD)</li>
-                  <li>• Agile Project Management</li>
+                  <li>• Business Analysis & As-Is/To-Be Analysis</li>
+                  <li>• Requirement Gathering & Elicitation</li>
+                  <li>• API Analysis & Integration (REST APIs)</li>
+                  <li>• Project Management & Delivery Excellence</li>
+                  <li>• SDLC & Release Management</li>
+                  <li>• BRD & FRD Documentation</li>
+                  <li>• Change Management & Process Improvement</li>
                 </ul>
               </CardContent>
             </Card>
@@ -92,11 +95,12 @@ export function About() {
               <CardContent className="p-6">
                 <h4 className="font-semibold text-slate-800 mb-2">Current Focus</h4>
                 <ul className="space-y-2 text-slate-600">
-                  <li>• Advanced SQL & Database Optimization</li>
-                  <li>• Power BI Dashboard Development</li>
-                  <li>• UX Design Principles</li>
-                  <li>• AI Integration in Business Processes</li>
-                  <li>• Modern API Architecture</li>
+                  <li>• Government Digital Transformation (SITA Project)</li>
+                  <li>• Enterprise Billing Application Delivery</li>
+                  <li>• Cross-functional Team Leadership (16-18 members)</li>
+                  <li>• Onsite Requirement Engineering (Johannesburg)</li>
+                  <li>• Agile Facilitation & Scrum Ceremonies</li>
+                  <li>• Client & Stakeholder Engagement</li>
                 </ul>
               </CardContent>
             </Card>

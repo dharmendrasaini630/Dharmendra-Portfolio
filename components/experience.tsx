@@ -5,28 +5,50 @@ import { Calendar, MapPin, Building } from "lucide-react"
 export function Experience() {
   const experiences = [
     {
-      title: "Associate Software Engineer",
-      company: "ANR Software Pvt. Ltd.",
-      period: "June 2023 – Present",
-      location: "Current Position",
+      title: "Business Analyst | Project Manager",
+      company: "IN2IT Technology",
+      period: "March 2026 – Present",
+      location: "Noida, India",
       description:
-        "Leading API integration projects and business process optimization initiatives. Specializing in complex system integrations and data analysis solutions.",
+        "Leading business analysis and delivery of a Billing Application for SITA (State Information Technology Agency), South Africa. Managing a cross-functional team of 16-18 members across Development, QA and Design. Travelled onsite to Johannesburg for 3 months for requirement gathering and elicitation.",
       responsibilities: [
-        "Design and implement API integration solutions",
-        "Analyze business requirements and create technical specifications",
-        "Optimize existing business processes for improved efficiency",
-        "Collaborate with cross-functional teams on system implementations",
-        "Provide technical training and support to team members",
+        "Onsite requirement gathering and elicitation at client site in Johannesburg, South Africa",
+        "Conducted As-Is/To-Be analysis and defined target system processes",
+        "Prepared BRD and FRD with business logic, technical detail and workflows",
+        "Built interactive prototypes for stakeholder visualization and feedback",
+        "Developed Work Breakdown Structure (WBS) for modular delivery sequencing",
+        "Facilitated Scrum ceremonies (stand-ups, sprint planning, reviews, retrospectives)",
+        "Managed cross-functional team of 16-18 members and removed impediments",
+        "Coordinated weekly status calls and demos with external stakeholders",
       ],
-      tools: ["Any Connector", "ADP WFN", "SQL", "Power BI", "Jira", "Agile/Scrum"],
+      tools: ["Azure DevOps", "JIRA", "BRD/FRD", "Prototyping", "Agile/Scrum", "Stakeholder Management"],
+    },
+    {
+      title: "Business Analyst | Associate Software Engineer",
+      company: "ANR Software Pvt. Ltd.",
+      period: "June 2023 – February 2026",
+      location: "Noida, India",
+      description:
+        "Led end-to-end integrations for Employee IN, Employee OUT, Payroll OUT, and Employee Updates using REST APIs. Delivered seamless integration solutions for third-party payroll partners including ADP, Proliant, Paycor, Paylocity & Paymaster.",
+      responsibilities: [
+        "Led HR & Payroll integration leadership for enterprise clients",
+        "Created and maintained comprehensive FRD/BRD documentation",
+        "Built end-to-end API workflow diagrams and impact assessments",
+        "Led Incident Resolution & Root Cause Analysis (RCA) for integration issues",
+        "Proposed and implemented technical fixes to stabilize API performance",
+        "Coordinated with third-party partners for validation and regression testing",
+        "Facilitated Agile/Scrum ceremonies and sprint planning",
+        "Strengthened team collaboration through backlog refinement and risk removal",
+      ],
+      tools: ["Any Connector", "ADP WFN", "REST APIs", "SQL", "Power BI", "Jira", "Agile/Scrum"],
     },
     {
       title: "Professional Services",
       company: "ANR Software Pvt. Ltd.",
       period: "June 2022 – May 2023",
-      location: "Foundation Role",
+      location: "Noida, India",
       description:
-        "Started my journey in business analysis and API integrations. Focused on learning core technologies and contributing to client projects.",
+        "Started journey in business analysis and API integrations. Focused on learning core technologies and contributing to client projects in HR/Payroll domain.",
       responsibilities: [
         "Assisted in API integration projects",
         "Documented business requirements and processes",

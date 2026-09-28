@@ -11,43 +11,70 @@ export function Projects() {
 
   const projects = [
     {
+      title: "SITA Billing Application",
+      summary:
+        "Leading the analysis and delivery of an enterprise Billing Application for SITA, the ICT agency of the South African government, managing a cross-functional team of 16-18 members.",
+      description:
+        "Led the analysis and delivery of an enterprise Billing Application for SITA (State Information Technology Agency), South Africa. The application lets SITA capture customer details and raise monthly bills to its clients for the services provided. Travelled onsite to Johannesburg for 3 months for requirement gathering and elicitation. Prepared BRD and FRD, built interactive prototypes, and developed a Work Breakdown Structure (WBS) for modular delivery.",
+      tools: ["Azure DevOps", "JIRA", "BRD/FRD", "Prototyping", "Agile/Scrum", "Stakeholder Management"],
+      results: [
+        "Onsite requirement engineering in Johannesburg, South Africa",
+        "Managed cross-functional team of 16-18 members",
+        "Developed comprehensive BRD and FRD documentation",
+        "Built interactive prototypes for stakeholder visualization",
+        "Facilitated Scrum ceremonies and removed impediments",
+        "Weekly status calls and demos with external stakeholders",
+      ],
+      challenges: [
+        "Onsite stakeholder management in international environment",
+        "Complex government/public sector requirements",
+        "Cross-functional team coordination across time zones",
+        "Modular delivery sequencing with WBS",
+        "Agile delivery in government sector context",
+      ],
+      icon: <TrendingDown className="h-5 w-5" />,
+    },
+    {
       title: "Partner Self-Service Portal",
       summary:
-        "Developed a comprehensive self-service portal for partners to manage their accounts, reducing support ticket volume by 20%.",
+        "Built an intuitive portal for third-party partners to monitor and manage integrations, reducing support ticket queries by 50% through enhanced self-service capabilities.",
       description:
-        "Led the end-to-end development of a partner self-service portal that revolutionized how external partners interact with our systems. The portal provides comprehensive account management capabilities, real-time data access, and automated workflows that significantly reduced the burden on our support team.",
+        "Developed a comprehensive self-service portal for partners to monitor and manage integrations efficiently. Delivered graphical insights on live stores integrated with brands such as Little Caesars, Pizza Hut & McDonald's over 7/30-day periods. Enabled video uploads, document signing, and sharing of essential updates, improving partner engagement and accessibility.",
       tools: ["Any Connector", "ADP WFN", "SQL", "Power BI", "REST APIs"],
       results: [
-        "20% reduction in support tickets",
-        "Improved partner satisfaction scores",
-        "Automated 80% of routine partner requests",
-        "Reduced response time from 24 hours to real-time",
+        "50% reduction in support ticket queries",
+        "Partner dashboard with live store insights",
+        "Resource Centre with video and document management",
+        "Improved partner engagement and accessibility",
+        "Enhanced self-service capabilities",
       ],
       challenges: [
         "Integration with legacy systems",
         "Complex authentication requirements",
         "Real-time data synchronization",
-        "Multi-tenant architecture design",
+        "Multi-brand partner management",
       ],
       icon: <TrendingDown className="h-5 w-5" />,
     },
     {
-      title: "Employee IN via AC (Any Connector)",
+      title: "Employee IN Integration via AC",
       summary:
-        "Streamlined employee onboarding process through automated data integration, reducing onboarding time by 30%.",
+        "Streamlined employee onboarding process through automated data integration, reducing onboarding time for new employees by 30%.",
       description:
-        "Designed and implemented an automated employee onboarding system using Any Connector to integrate multiple HR systems. The solution creates a seamless flow from initial employee data entry to complete system provisioning, eliminating manual data entry and reducing errors.",
-      tools: ["Any Connector", "HRIS Integration", "Workflow Automation", "Data Validation"],
+        "Streamlined the Employee IN Integration process to onboard employees in Altametrics Enterprise Office using REST APIs. Eliminated internal processing layers, allowing direct ingestion of partner data via Any Connector service. Built a flexible, secure processing framework supporting partner-specific requirements including encrypted SSN handling and rotational API key management.",
+      tools: ["Any Connector", "HRIS Integration", "Workflow Automation", "REST APIs", "Data Validation"],
       results: [
         "30% reduction in onboarding time",
-        "95% reduction in data entry errors",
-        "Improved new hire experience",
-        "Standardized onboarding process across departments",
+        "Partner-configurable architecture",
+        "Encrypted SSN handling for select clients",
+        "Rotational API key management",
+        "Direct data ingestion without internal layers",
       ],
       challenges: [
         "Multiple system integrations",
         "Data format standardization",
-        "Error handling and rollback procedures",
+        "Security requirements for SSN handling",
+        "Partner-specific customization needs",
         "Compliance with data privacy regulations",
       ],
       icon: <Clock className="h-5 w-5" />,

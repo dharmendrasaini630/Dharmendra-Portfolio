@@ -33,13 +33,14 @@ export function Hero() {
               </div>
 
               <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
-                Business Analyst | API & Data Enthusiast
+                Business Analyst | Project Manager
               </p>
 
               <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">
-                With over 4+ years of experience in API integrations, business process optimization, and data analysis.
-                I specialize in transforming complex requirements into smart technical solutions—especially in hiring
-                and payroll systems.
+                Strategic & delivery-focused professional with 4+ years of experience in the IT/software domain,
+                spanning end-to-end business analysis, requirement engineering and full project delivery across
+                enterprise and public-sector programs. Currently leading a government digital transformation program
+                for SITA, South Africa.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
@@ -71,8 +72,8 @@ export function Hero() {
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 w-28 h-28 bg-gradient-to-br from-teal-600 to-teal-700 rounded-full flex flex-col items-center justify-center shadow-xl border-4 border-white">
-                <div className="text-white text-xs font-semibold tracking-wider">EXPERT</div>
-                <div className="text-white text-lg font-bold">BA</div>
+                <div className="text-white text-xs font-semibold tracking-wider">BA | PM</div>
+                <div className="text-white text-lg font-bold">Expert</div>
                 <div className="text-teal-100 text-xs">Since '22</div>
               </div>
             </div>

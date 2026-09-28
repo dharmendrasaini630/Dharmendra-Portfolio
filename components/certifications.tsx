@@ -171,7 +171,6 @@ export function Certifications() {
 
   const handleDownload = (type: string) => {
     if (type === "psm") {
-      // Download the PSM I certificate
       const link = document.createElement("a");
       link.href = "/resume/PSM-I-Certificate-Dharmendra-Kumar-Saini_page-0001 (3).pdf";
       link.download = "PSM-I-Certificate-Dharmendra-Kumar-Saini.pdf";
@@ -179,7 +178,6 @@ export function Certifications() {
       link.click();
       document.body.removeChild(link);
     } else if (type === "powerbi") {
-      // Download the Power BI certificate
       const link = document.createElement("a");
       link.href = "/resume/Complete Guide to Power BI for Data Analysts (1).pdf";
       link.download = "PowerBI-Certificate-Dharmendra-Kumar-Saini.pdf";
@@ -187,7 +185,6 @@ export function Certifications() {
       link.click();
       document.body.removeChild(link);
     } else if (type === "businessanalysis") {
-      // Download the Business Analysis certificate PDF
       const link = document.createElement("a");
       link.href = "/resume/Certification of Capability in Business Analysis (1).pdf";
       link.download = "Certification-of-Capability-in-Business-Analysis.pdf";
@@ -195,7 +192,6 @@ export function Certifications() {
       link.click();
       document.body.removeChild(link);
     } else if (type === "cbap") {
-      // Download the CBAP certificate PDF
       const link = document.createElement("a");
       link.href = "/resume/Certified Business Analysis Professional CBAP (1).pdf";
       link.download = "Certified-Business-Analysis-Professional-CBAP.pdf";
