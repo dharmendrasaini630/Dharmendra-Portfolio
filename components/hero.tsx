@@ -26,7 +26,7 @@ export function Hero() {
           <div className="lg:w-1/2 mb-12 lg:mb-0">
             <div className="space-y-6">
               <div className="space-y-2">
-                <p className="text-teal-600 font-medium text-lg">Hi, I'm Dharmendra —</p>
+                <p className="text-teal-600 font-medium text-lg">Hi, I'm Dharmendra </p>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-800 leading-tight">
                   Turning Business Needs Into <span className="text-teal-600">Scalable Tech Solutions</span>
                 </h1>
@@ -38,7 +38,7 @@ export function Hero() {
 
               <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">
                 Strategic & delivery-focused professional with 4+ years of experience in the IT/software domain,
-                spanning end-to-end business analysis, requirement engineering and full project delivery across
+                spanning end-to-end business analysis, requirement elicitation and gathering, full project delivery across
                 enterprise and public-sector programs. Currently leading a government digital transformation program
                 for SITA, South Africa.
               </p>
