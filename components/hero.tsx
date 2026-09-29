@@ -63,7 +63,7 @@ export function Hero() {
             <div className="relative">
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-white">
                 <Image
-                  src="/images/dharmendra-profile-professional.png"
+                  src="/images/Profile.png"
                   alt="Dharmendra Kumar Saini - Business Analyst"
                   width={400}
                   height={400}
