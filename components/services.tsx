@@ -4,27 +4,27 @@ import { FileText, Zap, BarChart3, Users } from "lucide-react"
 export function Services() {
   const services = [
     {
-      title: "Business Documentation & Analysis",
-      description: "BRD/FRD creation, process mapping, and workflow optimization for seamless business operations.",
+      title: "Business Analysis & Requirements",
+      description: "As-Is/To-Be analysis, BRD/FRD creation, requirement elication, and stakeholder management for enterprise projects.",
       icon: <FileText className="h-8 w-8" />,
       color: "bg-teal-100 text-teal-600",
     },
     {
-      title: "API Integration Consulting",
-      description: "Expert API architecture design, system connectivity, and data flow optimization solutions.",
-      icon: <Zap className="h-8 w-8" />,
+      title: "Project Management & Delivery",
+      description: "End-to-end project governance, SDLC management, WBS development, and cross-functional team leadership.",
+      icon: <Users className="h-8 w-8" />,
       color: "bg-blue-100 text-blue-600",
     },
     {
-      title: "Data Analysis & Visualization",
-      description: "SQL optimization, Power BI dashboards, and comprehensive reporting for actionable insights.",
-      icon: <BarChart3 className="h-8 w-8" />,
+      title: "API Integration & Architecture",
+      description: "REST API design, system connectivity, API testing, and enterprise integration solutions.",
+      icon: <Zap className="h-8 w-8" />,
       color: "bg-purple-100 text-purple-600",
     },
     {
-      title: "Agile Project Support",
-      description: "Sprint planning, stakeholder management, and team coordination using Agile methodologies.",
-      icon: <Users className="h-8 w-8" />,
+      title: "Data Analysis & Reporting",
+      description: "SQL optimization, Power BI dashboards, data visualization, and business intelligence solutions.",
+      icon: <BarChart3 className="h-8 w-8" />,
       color: "bg-green-100 text-green-600",
     },
   ]

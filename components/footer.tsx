@@ -7,7 +7,7 @@ export function Footer() {
         <div className="text-center">
           <div className="mb-8">
             <h3 className="text-xl sm:text-2xl font-bold mb-2">Dharmendra Kumar Saini</h3>
-            <p className="text-slate-300 text-sm sm:text-base">Business Analyst | API & Data Enthusiast</p>
+            <p className="text-slate-300 text-sm sm:text-base">Business Analyst | Project Manager</p>
           </div>
         </div>
       </div>
